@@ -1,0 +1,132 @@
+<MyBut@Button>
+    font_size: 40
+    size_hint: 0.3, 1
+
+
+<Container>:
+    orientation: 'vertical'
+    padding: 0
+    spacing: 0
+    text_input: text_input
+    but_7: but_7
+    but_8: but_8
+    but_9: but_9
+    but_4: but_4
+    but_5: but_5
+    but_6: but_6
+    but_1: but_1
+    but_2: but_2
+    but_3: but_3
+    but_0: but_0
+
+
+    TextInput:
+        text: ''
+        id: text_input
+        multiline: False
+        font_size: 50
+        size_hint: 1, 1
+
+    MDBoxLayout:
+        MyBut:
+            text: '7'
+            id: but_7
+            on_release:
+                root.change_7()
+        MyBut:
+            text: '8'
+            id: but_8
+            on_release:
+                root.change_8()
+
+        MyBut:
+            text: '9'
+            id: but_9
+            on_release:
+                root.change_9()
+
+        MyBut:
+            text: '/'
+            on_release:
+                root.dividing()
+
+    MDBoxLayout:
+        MyBut:
+            text: '4'
+            id: but_4
+            on_release:
+                root.change_4()
+
+        MyBut:
+            text: '5'
+            id: but_5
+            on_release:
+                root.change_5()
+
+        MyBut:
+            text: '6'
+            id: but_6
+            on_release:
+                root.change_6()
+
+        MyBut:
+            text: 'x'
+            on_release:
+                root.multiplication()
+
+    MDBoxLayout:
+        MyBut:
+            text: '1'
+            id: but_1
+            on_release:
+                root.change_1()
+
+        MyBut:
+            text: '2'
+            id: but_2
+            on_release:
+                root.change_2()
+
+        MyBut:
+            text: '3'
+            id: but_3
+            on_release:
+                root.change_3()
+
+        MyBut:
+            text: '-'
+            on_release:
+                root.difference()
+
+    MDBoxLayout:
+        MyBut:
+            text: '0'
+            id: but_0
+            on_release:
+                root.change_0()
+
+        MyBut:
+            text: '.'
+            on_release:
+                root.point()
+
+        MyBut:
+            text: 'AC'
+            on_release:
+                root.clear()
+
+        MyBut:
+            text: '+'
+            on_release:
+                root.addition()
+
+    MDBoxLayout:
+        MyBut:
+            text: '='
+            font_size: 40
+            size_hint: 1, 1
+            on_release:
+                root.calculation()
+
+
+
